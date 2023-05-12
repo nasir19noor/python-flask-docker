@@ -26,8 +26,8 @@ Now visit http://localhost:8080
  ### Verify the running container
  Verify by checking the container ip and hostname (ID):
  ```
- $ docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' my-container
+ $ docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' python-flask-docker
 172.17.0.2
-$ docker inspect -f '{{ .Config.Hostname }}' my-container
+$ docker inspect -f '{{ .Config.Hostname }}' python-flask-docker
 6095273a4e9b
  ```
