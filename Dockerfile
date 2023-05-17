@@ -3,6 +3,6 @@ LABEL maintainer="nasir@nasir.id"
 copy . /app
 WORKDIR /app
 RUN pip install -r requirements.txt
-EXPOSE 8080
+EXPOSE 1001
 ENTRYPOINT ["python"]
 CMD ["src/app.py"]
